@@ -18,9 +18,9 @@ let GuessesSoFar;
 // Starts off the game my having the Computer select a random letter from the Letters array.
 
 function NewLetter () {
+    CompLetter = Letters[Math.floor(Math.random() * Letters.length)];
     GuessesLeft = 9
     GuessesSoFar = "";
-    CompLetter = Letters[Math.floor(Math.random() * Letters.length)];
 }
 
 NewLetter();
